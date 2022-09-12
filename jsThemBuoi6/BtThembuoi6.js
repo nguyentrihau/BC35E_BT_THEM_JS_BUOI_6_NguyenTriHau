@@ -36,8 +36,8 @@
   
 // tạo function kiem tra snt:
   function kiemTraSnt(n){
-    //flag = true => return cong vao kq
-    //flag = false => break ko chay xun return de cong vao kq   
+    //flag = true =>  cong vao kq
+    //flag = false => break ko  cong vao kq   
     var flag = true;
     
   for( var a = 2 ; a <= Math.sqrt(n) ; a++) {
@@ -53,7 +53,7 @@ document.getElementById("btnSNT").onclick= function() {
 //*Tìm và liệt kê các số nguyên tố */
 // - input:
 // + num=nguoi dung nhập 
-// + i=2 chay toi bằng num
+// + i=2 chay toi bằng num(snt từ 2 trở đi)
 for (var num = document.getElementById("SNT").value * 1, i = 2,kq=""; i <= num; i++){
     //progress: neu check true thi kq += i;
     if (kiemTraSnt(i)){kq+=i+" "};
